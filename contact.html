@@ -58,10 +58,20 @@
     <section class="contact-form">
         <div class="container">
             <h2>Come in Contact with Us</h2>
-            <form>
-                <input id="name" type="text">
-                <input id="email" type="email">
-                <textarea id="message"></textarea>
+            <form onsubmit="submitForm(event)" novalidate>
+                <div>
+                    <input id="name" type="text" onkeyup="validate(event)" placeholder="Your Name">
+                    <div id="nameErrorMessage" class="errorMessage"></div>
+                </div>
+                <div>
+                    <input id="email" type="email" onkeyup="validate(event)" placeholder="Your Mail">
+                    <div id="emailErrorMessage" class="errorMessage"></div>
+                </div>
+                <div class="textarea">
+                    <textarea id="comment" onkeyup="validate(event)" placeholder="Comments"></textarea>
+                    <div id="commentErrorMessage" class="errorMessage"></div>
+                </div>
+
                 <div>
                     <button type="submit" class="btn-theme">
                         <span class="corner-topLeft"></span>
@@ -85,6 +95,5 @@
         </div>
         <div>@ 2022 Fixxo. All Rights Reserved</div>
     </footer>
-
 </body>
 </html>
