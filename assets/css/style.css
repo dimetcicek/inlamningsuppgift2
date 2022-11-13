@@ -206,6 +206,13 @@ header {
         max-width: 1110px;
 
     }
+    .__featured-products h1 {
+        font-size: 20px;
+        font-weight: 700;
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
 
     .card {
         border: none;
@@ -436,6 +443,7 @@ header {
         justify-content: center;
         align-items: center;
         background-color: var(--color-extralightgray);
+        border-top: 1px solid var(--color-darkgray);
         padding: 25px;
     }
 
@@ -455,6 +463,56 @@ header {
             text-decoration: none;
         }
 
+
+
+    .__site-info {
+        margin-bottom: 70px;
+    }
+
+        .__site-info .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+        }
+
+        .__site-info .__customer-support img,
+        .__secured-payment img,
+        .__free-home-deliver img {
+            position: relative;
+            left: 65px;
+        }
+
+        .__site-info .__thirty-day-reuters img {
+            position: relative;
+            left: 45px;
+        }
+
+        .__site-info .__customer-support h1,
+        .__secured-payment h1,
+        .__free-home-deliver h1 {
+            font-size: 20px;
+            font-weight: 700;
+            position: relative;
+            left: 20px;
+        }
+
+        .__site-info .__thirty-day-reuters h1 {
+            font-size: 20px;
+            font-weight: 700;
+            position: relative;
+            left: 20px;
+        }
+
+        .__site-info .__customer-support p,
+        .__secured-payment p,
+        .__free-home-deliver p,
+        .__thirty-day-reuters p {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--color-darkgray);
+            margin-top: 25px;
+        }
 
 
 
