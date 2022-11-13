@@ -443,7 +443,7 @@ header {
         justify-content: center;
         align-items: center;
         background-color: var(--color-extralightgray);
-        border-top: 1px solid var(--color-darkgray);
+        border-top: 1px solid var(--color-lightgray);
         padding: 25px;
     }
 
@@ -474,6 +474,7 @@ header {
             justify-content: space-between;
             align-items: center;
             max-width: 1100px;
+            border-top: 1px solid var(--color-lightgray);
         }
 
         .__site-info .__customer-support img,
@@ -481,11 +482,13 @@ header {
         .__free-home-deliver img {
             position: relative;
             left: 65px;
+            padding-top: 30px;
         }
 
         .__site-info .__thirty-day-reuters img {
             position: relative;
             left: 45px;
+            padding-top: 30px;
         }
 
         .__site-info .__customer-support h1,
